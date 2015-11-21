@@ -1,0 +1,18 @@
+{
+    "contents" : "#' @export\nHAY <- function(target=NULL, from, to,\n                twitter_consumer_key=NULL,\n                twitter_consumer_secret=NULL,\n                gmailr_json_path=NULL\n                ){\n  require(gmailr)\n  require(twitteR)\n  if(is.null(twitter_consumer_key)){\n    twitter_consumer_key <- options()$CONSUMER_KEY\n  }\n  if(is.null(twitter_consumer_secret)){\n    twitter_consumer_secret <- options()$CONSUMER_SECRET\n  }\n  if(is.null(gmailr_json_path)){\n    gmailr_json_path <- options()$GMAILR_PATH\n  }\n  if(is.null(target)){\n    target <- \"teramonagi\"\n  }\n  setup_twitter_oauth(twitter_consumer_key,twitter_consumer_secret)\n  msg <- userTimeline(target, n=20)\n  tfrom <- as.POSIXct(paste(as.character(Sys.Date()), \"03:00:00\"))\n  tto <- as.POSIXct(paste(as.character(Sys.Date()), \"08:00:00\"))\n  getTwTime <- function(x)as.POSIXlt(x$created, tz=\"Asia/Tokyo\")\n  num <- max(which(unlist(lapply(msg, function(x)(getTwTime(x) > tfrom) & (getTwTime(x) < tto)))))\n  if(is.finite(num)){\n    gmail_auth(gmailr_json_path, scope = 'full')\n    time <- as.numeric(format(getTwTime(msg[[num]]), \"%H\"))\n    txt <- sprintf(\"今日の%sは%s時には起きて活動開始しているぞ、お前はどうする？？？\",\n                   target, time)\n    msg <- mime(from=from, to=to, subject=\"How about you\", body=txt)\n    send_message(msg)\n  }\n}\n",
+    "created" : 1448064693723.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2271135925",
+    "id" : "9801B742",
+    "lastKnownWriteTime" : 1448072971,
+    "path" : "~/howaboutyou/R/HAY.R",
+    "project_path" : "R/HAY.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: howaboutyou\nType: Package\nTitle: omae wa dousuru\nVersion: 0.0.1\nDate: 2015-11-21\nAuthor: dichika\nDescription: aitsu wa ganbatteru. omae wa dousuru???\nLicense: MIT\nImports: twitteR, gmailr\n",
+    "created" : 1448072589466.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2476452981",
+    "id" : "117E34F1",
+    "lastKnownWriteTime" : 1448072684,
+    "path" : "~/howaboutyou/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}

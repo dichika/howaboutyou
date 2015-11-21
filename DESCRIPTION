@@ -1,0 +1,9 @@
+Package: howaboutyou
+Type: Package
+Title: omae wa dousuru
+Version: 0.0.1
+Date: 2015-11-21
+Author: dichika
+Description: aitsu wa ganbatteru. omae wa dousuru???
+License: MIT
+Imports: twitteR, gmailr
