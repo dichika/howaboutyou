@@ -1,12 +1,12 @@
 {
-    "contents" : ".httr-oauth\n.Rbuildignore\n.Rhistory\n.Rproj\n",
+    "contents" : ".httr-oauth\n.Rbuildignore\n.Rhistory\n.Rproj\n.Rproj.user\n",
     "created" : 1448073148119.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3037864450",
+    "hash" : "1907091135",
     "id" : "633E5EC9",
-    "lastKnownWriteTime" : 1448073194,
+    "lastKnownWriteTime" : 1448074324,
     "path" : "~/howaboutyou/.gitignore",
     "project_path" : ".gitignore",
     "properties" : {
