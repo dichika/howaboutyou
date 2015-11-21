@@ -1,18 +1,20 @@
 # howaboutyou
-勤勉な人のツイッターアカウントを指定して、人間を煽ります。
-具体的には午前３時から午前８時の間で勤勉な人のツイッターから活動開始時間を取得し、指定のメールアドレスに送りつけます。
+- 勤勉な人のツイッターアカウントを指定して、人間を煽ります。
+
+- 具体的には午前３時から午前８時の間で勤勉な人のツイッターから活動開始時間を取得し、指定のメールアドレスに送りつけます。
+
 ## usage
-target：勤勉な人のツイッターアカウントid（デフォルトはteramonagiさんです）
+- target：勤勉な人のツイッターアカウントid（デフォルトはteramonagiさんです）
 
-from：送信元のメールアドレス（GMail限定）
+- from：送信元のメールアドレス（GMail限定）
 
-to：送信先のメールアドレス
+- to：送信先のメールアドレス
 
-twitter_consumer_key：あなたのTwitter CONSUMER KEYを指定してください。CONSUMER KEYの取得は[こちら](http://hello-apis.blogspot.jp/2013/03/twitterapi.html)などを参照のこと。
+- twitter_consumer_key：あなたのTwitter CONSUMER KEYを指定してください。CONSUMER KEYの取得は[こちら](http://hello-apis.blogspot.jp/2013/03/twitterapi.html)などを参照のこと。
 
-twitter_consumer_secret：あなたのTwitter CONSUMER SECRETを指定してください。
+- twitter_consumer_secret：あなたのTwitter CONSUMER SECRETを指定してください。
 
-gmailr_json_path：gmail API jsonファイルのパスを指定してください。認証の手順は[こちら](http://qiita.com/soundTricker/items/e09351ab2c82760ac5b1)などを参照のこと。。認証したらjson形式でダウンロードしてそのパスを指定します。
+- gmailr_json_path：gmail API jsonファイルのパスを指定してください。認証の手順は[こちら](http://qiita.com/soundTricker/items/e09351ab2c82760ac5b1)などを参照のこと。。認証したらjson形式でダウンロードしてそのパスを指定します。
 
 ## example
 

@@ -1,12 +1,12 @@
 {
-    "contents" : "# howaboutyou\n勤勉な人のツイッターアカウントを指定して、人間を煽ります。\n具体的には午前３時から午前８時の間で勤勉な人のツイッターから活動開始時間を取得し、指定のメールアドレスに送りつけます。\n## usage\ntarget：勤勉な人のツイッターアカウントid（デフォルトはteramonagiさんです）\n\nfrom：送信元のメールアドレス（GMail限定）\n\nto：送信先のメールアドレス\n\ntwitter_consumer_key：あなたのTwitter CONSUMER KEYを指定してください。CONSUMER KEYの取得は[こちら](http://hello-apis.blogspot.jp/2013/03/twitterapi.html)などを参照のこと。\n\ntwitter_consumer_secret：あなたのTwitter CONSUMER SECRETを指定してください。\n\ngmailr_json_path：gmail API jsonファイルのパスを指定してください。認証の手順は[こちら](http://qiita.com/soundTricker/items/e09351ab2c82760ac5b1)などを参照のこと。。認証したらjson形式でダウンロードしてそのパスを指定します。\n\n## example\n\n```r\nlibrary(\"howaboutyou\")\nHAY(target=\"teramonagi\",\n    from = \"tokorosawayoshio@gmail.com\",\n    to = \"yosshioyosshio99999999@i.softbank.jp\",\n    twitter_consumer_key=\"あなたのTwitter CONSUMER KEY\",\n    twitter_consumer_secret=\"あなたのTwitter CONSUMER SECRET\",\n    gmailr_json_path=\"あなたのgmail API jsonファイルのパス\"\n)\n\n```\n",
+    "contents" : "# howaboutyou\n- 勤勉な人のツイッターアカウントを指定して、人間を煽ります。\n\n- 具体的には午前３時から午前８時の間で勤勉な人のツイッターから活動開始時間を取得し、指定のメールアドレスに送りつけます。\n\n## usage\n- target：勤勉な人のツイッターアカウントid（デフォルトはteramonagiさんです）\n\n- from：送信元のメールアドレス（GMail限定）\n\n- to：送信先のメールアドレス\n\n- twitter_consumer_key：あなたのTwitter CONSUMER KEYを指定してください。CONSUMER KEYの取得は[こちら](http://hello-apis.blogspot.jp/2013/03/twitterapi.html)などを参照のこと。\n\n- twitter_consumer_secret：あなたのTwitter CONSUMER SECRETを指定してください。\n\n- gmailr_json_path：gmail API jsonファイルのパスを指定してください。認証の手順は[こちら](http://qiita.com/soundTricker/items/e09351ab2c82760ac5b1)などを参照のこと。。認証したらjson形式でダウンロードしてそのパスを指定します。\n\n## example\n\n```r\nlibrary(\"howaboutyou\")\nHAY(target=\"teramonagi\",\n    from = \"tokorosawayoshio@gmail.com\",\n    to = \"yosshioyosshio99999999@i.softbank.jp\",\n    twitter_consumer_key=\"あなたのTwitter CONSUMER KEY\",\n    twitter_consumer_secret=\"あなたのTwitter CONSUMER SECRET\",\n    gmailr_json_path=\"あなたのgmail API jsonファイルのパス\"\n)\n\n```\n",
     "created" : 1448073361395.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2537978574",
+    "hash" : "1675933281",
     "id" : "20581EEF",
-    "lastKnownWriteTime" : 1448074748,
+    "lastKnownWriteTime" : 1448074855,
     "path" : "~/howaboutyou/README.md",
     "project_path" : "README.md",
     "properties" : {
